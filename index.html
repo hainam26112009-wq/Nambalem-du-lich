@@ -1,1 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌏 3 Cảnh Đẹp Việt Nam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f0f8ff;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #20b2aa, #4169e1);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #20b2aa;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .audio-section, .video-section, .team-section {
+            background: white;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 700px;
+        }
+        .audio-section {
+            text-align: center;
+        }
+        .gallery {
+            max-width: 1000px;
+            margin: 0 auto 40px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .place-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .place-card:hover {
+            transform: translateY(-5px);
+        }
+        .place-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .place-info {
+            padding: 18px;
+        }
+        .place-info h3 {
+            color: #4169e1;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        .place-info p {
+            color: #555;
+            text-align: justify;
+            font-size: 0.95em;
+        }
+        .video-container {
+            text-align: center;
+        }
+        .video-container iframe, .video-container video {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .member-list {
+            list-style: none;
+            padding-left: 10px;
+        }
+        .member-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #ddd;
+            color: #555;
+        }
+        .member-list li:last-child {
+            border-bottom: none;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <h1>🇻🇳 3 CẢNH ĐẸP VIỆT NAM</h1>
+        <p>Khám phá những danh thắng tuyệt đẹp của đất nước chúng ta</p>
+    </header>
+
+    <section class="audio-section">
+        <h2>🎶 Nhạc nền</h2>
+        <p>Nghe trong khi tham quan nhé!</p>
+        <audio controls>
+            <source src="nhac-nen-viet-nam.mp3" type="audio/mpeg">
+            Trình duyệt không hỗ trợ phát âm thanh.
+        
+        <p style="font-size: 0.85em; color: #777; margin-top: 8px;">
+            * Đặt tệp nhạc cùng thư mục và đổi tên thành "nhac-nen-viet-nam.mp3"
+        </p>
+    </section>
+
+    <div class="gallery">
+        <!-- Vịnh Hạ Long -->
+        <div class="place-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Ha_Long_Bay_2.jpg/800px-Ha_Long_Bay_2.jpg" alt="Vịnh Hạ Long">
+            <div class="place-info">
+                <h3>🌊 Vịnh Hạ Long</h3>
+                <p>Nằm ở tỉnh Quảng Ninh, Vịnh Hạ Long là kỳ quan thiên nhiên thế giới với hàng nghìn hòn đảo đá vôi kỳ diệu nhô lên trên mặt nước xanh ngọc bích. Được ví như "một bức tranh tự nhiên tuyệt đẹp", nơi đây luôn thu hút du khách trong và ngoài nước.</p>
+            </div>
+        </div>
+
+        <!-- Phố cổ Hội An -->
+        <div class="place-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Hoi_An_2019.jpg/800px-Hoi_An_2019.jpg" alt="Phố cổ Hội An">
+            <div class="place-info">
+                <h3>🏮 Phố cổ Hội An</h3>
+                <p>Phố cổ Hội An thuộc tỉnh Quảng Nam, là di sản văn hóa thế giới nổi tiếng với nét đẹp cổ kính, những ngôi nhà cổ mái ngói rêu phong và sông Thu Bồn êm đềm. Đêm đến, phố cổ rực rỡ với hàng nghìn đèn lồng đầy màu sắc.</p>
+            </div>
+        </div>
+
+        <!-- Động Phong Nha -->
+        <div class="place-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Phong_Nha_Cave_1.jpg/800px-Phong_Nha_Cave_1.jpg" alt="Động Phong Nha">
+            <div class="place-info">
+                <h3>🏞️ Động Phong Nha</h3>
+                <p>Động Phong Nha thuộc vườn quốc gia Phong Nha-Ke Bang, tỉnh Quảng Bình, được công nhận là di sản thiên nhiên thế giới. Nổi tiếng với hệ thống hang động kỳ vĩ, sông ngầm dài nhất và những khối thạch nhũ muôn hình muôn vẻ như chốn tiên cảnh.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phần Video Giới thiệu Thành viên -->
+    <section class="video-section">
+        <h2>🎬 Video Giới thiệu Nhóm</h2>
+        <div class="video-container">
+            <!-- Cách 1: Dùng video trên YouTube - dán link embed của bạn vào đây -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_CUA_BAN" title="Video giới thiệu nhóm" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <!-- Hoặc Cách 2: Dùng tệp video trên máy -->
+            <!-- <video controls width="560">
+                <source src="video-gioi-thieu-nhom.mp4" type="video/mp4">
+                Trình duyệt không hỗ trợ phát video.
+            </video> -->
+        </div>
+        <p style="text-align:center; font-size:0.9em; color:#777; margin-top:10px;">
+            * Thay "VIDEO_CUA_BAN" bằng mã video YouTube của bạn<br>
+            * Hoặc bỏ dấu comment trong thẻ &lt;video&gt; để dùng tệp trên máy
+        </p>
+    </section>
+
+    <!-- Phần Giới thiệu Thành viên -->
+    <section class="team-section">
+        <h2>Thành viên Nhóm</h2>
+        <ul class="member-list">
+            <li>✅ <strong>Họ và tên:</strong> Nguyễn Ngọc Linh— <strong>Vai trò:</strong> Trưởng nhóm, thiết kế nội dung</li>
+            <li>✅ <strong>Họ và tên:</strong> Đỗ Phạm Hải Nam— <strong>Vai trò:</strong> Thu thập hình ảnh, thông tin</li>
+            <li>✅ <strong>Họ và tên:</strong> Trương Công Nhật— <strong>Vai trò:</strong> Soạn thảo nội dung, trình bày</li>
+            <li>✅ <strong>Họ và tên:</strong> — <strong>Vai trò:</strong> Chỉnh sửa video, hoàn thiện sản phẩm</li>
+        </ul>
+        <p style="margin-top:15px; font-size:0.95em; color:#666; text-align:center;">
+    </section>
+
+    <footer>
+        <p>Trang web: Khám phá Cảnh đẹp Việt Nam</p>
+        <p>© 2026 - Nhóm 2 tổ 3❤️</p>
+    </footer>
+
+</body>
+</html>
